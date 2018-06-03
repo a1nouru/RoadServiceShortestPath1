@@ -21,7 +21,6 @@ public class Dijkstra {
             GRAPH[i] = new Graph.Edge(edge.startNodeId,edge.endNodeID , edge.l2Distance);
             i++;
         }
-
         Graph g = new Graph(GRAPH); //replace GRAPH with Edges; arr of Edges
         g.dijkstra(START);
         g.printPath(END);
