@@ -10,7 +10,6 @@ public class Dijkstra {
 
     private static final int START = 0;
     private static final int END = 4;
-
     public static void buildGraph(Map<String, Edge> EdgeGraph)
     {
         final Graph.Edge[] GRAPH = new Graph.Edge[EdgeGraph.size()];
