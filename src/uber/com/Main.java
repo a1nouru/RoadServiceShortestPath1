@@ -57,7 +57,10 @@ public class Main {
             System.out.println("\nList of Edges:");
             for(Edge edge : edges.values())
             {
-                System.out.println((edge.edgeId));
+                System.out.println((edge.startNodeId));
+                System.out.println((edge.endNodeID));
+//                System.out.println((edge.edgeId));
+                System.out.println();
 
             }
             try {

@@ -8,8 +8,8 @@ import java.util.TreeSet;
 
 public class Dijkstra {
 
-    private static final int START = 0;
-    private static final int END = 4;
+    private static final int START = 58;
+    private static final int END = 126;
     public static void buildGraph(Map<String, Edge> EdgeGraph)
     {
         final Graph.Edge[] GRAPH = new Graph.Edge[EdgeGraph.size()];
@@ -24,7 +24,7 @@ public class Dijkstra {
         Graph g = new Graph(GRAPH); //replace GRAPH with Edges; arr of Edges
         g.dijkstra(START);
         g.printPath(END);
-        //g.printAllPaths();
+        g.printAllPaths();
     }
 }
 
@@ -93,9 +93,6 @@ class Graph {
 
         //one pass to find all vertices
         for (Edge e : edges) {
-
-            if(e == null)
-                System.out.println("NUll found");
 
             if (!graph.containsKey(e.v1))
                 graph.put(e.v1, new Vertex(e.v1));
